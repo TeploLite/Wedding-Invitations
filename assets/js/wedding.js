@@ -101,3 +101,8 @@ const resetTooltip = (e) => {
 
 copyButton.addEventListener("click", (e) => copyText(e));
 copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
+
+const gambar = (img) => {
+  document.getElementById("show-modal-image").src = img.src;
+  bootstrap.Modal.getOrCreateInstance("#modal-image").show();
+};
