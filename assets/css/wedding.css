@@ -37,7 +37,8 @@ nav.footer {
   background-color: #343a40;
   text-align: center;
   color: goldenrod;
-  padding: 25px;
+  padding: 20px;
+  font-size: x-small;
 }
 img.card-img-top {
   width: 100%;
@@ -50,7 +51,7 @@ img.card-img-top {
   background-color: #e8ebee;
 }
 .col {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #protokol {
   background-image: url(../../assets/images/ornam/Asset5.png);
