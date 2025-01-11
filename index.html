@@ -514,15 +514,15 @@
     <form onsubmit="sendMessage()">
       <div class="mb-3">
         <label for="name">Your Name</label>
-        <input type="text"id="name" placeholder="Input Name" class="form-control shadow">
+        <input type="text" id="name" placeholder="Input Name" class="form-control shadow" required>
       </div>
       <div class="mb-3">
         <label for="presence">Presence</label>
-        <input type="presence" id="presence" placeholder="Input Presence" class="form-control shadow">
+        <input type="presence" id="presence" placeholder="Input Presence" class="form-control shadow" required>
       </div>
       <div class="mb-3">
         <label for="message">Your Message</label>
-        <textarea id="message" cols="30" rows="3" class="form-control shadow"></textarea>
+        <textarea id="message" cols="30" rows="3" class="form-control shadow" required></textarea>
       </div>
       <button class="btn btn-primary px-4" type="submit">
         Send Message

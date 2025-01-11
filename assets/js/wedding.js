@@ -103,7 +103,17 @@ copyButton.addEventListener("click", (e) => copyText(e));
 copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
 
 function sendMessage() {
-  const name = document.getElementById("name");
-  const presence = document.getElementById("presence");
-  const message = document.getElementById("message");
+  const name = document.getElementById("name").value;
+  const presence = document.getElementById("presence").value;
+  const message = document.getElementById("message").value;
+
+  const url =
+    "https://web.whatsapp.com/send?phone=6285225403799&text=Hallo%20Naruto%20%26%20Hinata%0ANama%20saya%20*" +
+    name +
+    "*%0ASaya%20akan%20*" +
+    presence +
+    "*%20di%20acara%20pernikahan%20kalian%0ADan%20saya%20akan%20menyampaikan%20pesan%2C%20*" +
+    message +
+    "*";
+  window.open(url);
 }
