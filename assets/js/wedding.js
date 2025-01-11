@@ -102,7 +102,8 @@ const resetTooltip = (e) => {
 copyButton.addEventListener("click", (e) => copyText(e));
 copyButton.addEventListener("mouseover", (e) => resetTooltip(e));
 
-const gambar = (img) => {
-  document.getElementById("show-gambar-image").src = img.src;
-  bootstrap.Gambar.getOrCreateInstance("#gambar-image").show();
-};
+function sendMessage() {
+  const name = document.getElementById("name");
+  const presence = document.getElementById("presence");
+  const message = document.getElementById("message");
+}
