@@ -518,7 +518,10 @@
       </div>
       <div class="mb-3">
         <label for="presence">Presence</label>
-        <input type="presence" id="presence" placeholder="Input Presence" class="form-control shadow" required>
+        <select type="presence" id="presence"class="form-control shadow" required>
+          <option value="present">Present</option>
+          <option value="notpresent">Not Present</option>
+        </select>
       </div>
       <div class="mb-3">
         <label for="message">Your Message</label>
@@ -528,21 +531,21 @@
         Send Message
       </button>
     </form>
-    <!--<div class="col-md">
-        <div class="card-body">
-          <div class="mb-3">
-            <label for="form-name" class="form-label"><i class="fa-solid fa-person me-1"></i>Name</label>
-            <input type="text" class="form-control shadow-sm rounded-4" id="form-name" placeholder="Isikan Nama Anda" data-offline-disabled="false">
-            </div>
-            <label for="form-comment" class="form-label"><i class="fa-solid fa-comment me-1"></i>Messages & Prayers</label>
-            <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" placeholder="Tulis Ucapan dan Doa" data-offline-disabled="false"></textarea>
-            </div>
-            <div class="d-grid">
-            <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="undangan.comment.send(this)" data-offline-disabled="false">
-            <i class="fa-solid fa-paper-plane me-1"></i>Send
-            </button>
-        </div>
-    </div>-->
+    <!--<div class="mb-3">
+                        <label for="form-presence" class="form-label"><i class="fa-solid fa-person-circle-question me-1"></i>Presensi</label>
+                        <select class="form-select shadow-sm rounded-4" id="form-presence" autocomplete="off" data-offline-disabled="false">
+                            <option value="0" selected>Konfirmasi Presensi</option>
+                            <option value="1">Datang</option>
+                            <option value="2">Berhalangan</option>
+                        </select>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="undangan.comment.send(this)" data-offline-disabled="false">
+                            <i class="fa-solid fa-paper-plane me-1"></i>Send
+                        </button>
+                    </div>
+                </div>
+-->
   </div>
   <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,256L1440,192L1440,320L0,320Z"></path></svg> -->
 </section>
