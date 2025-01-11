@@ -141,7 +141,7 @@
             class="d-block w-100"
             alt="pernikahan03" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto"
           />
-          <div class="carousel-caption d-md-block text-info">
+          <div class="carousel-caption d-md-block text-danger">
             <h5 class="card-title fst-italic">Wedding</h5>
             <h2 class="fst-italic"> Uzumaki Naruto & Hyuga Hinata</h2>
           </div>
@@ -152,7 +152,7 @@
             class="d-block w-100"
             alt="pernikahan02"
           />
-          <div class="carousel-caption d-md-block text-info">
+          <div class="carousel-caption d-md-block text-danger">
             <h5 class="card-title fst-italic">Wedding</h5>
             <h2 class="fst-italic"> Uzumaki Naruto & Hyuga Hinata</h2>
           </div>
@@ -163,7 +163,7 @@
             class="d-block w-100"
             alt="pernikahan02"
           />
-          <div class="carousel-caption d-md-block text-info">
+          <div class="carousel-caption d-md-block text-danger">
             <h5 class="card-title fst-italic">Wedding</h5>
             <h2 class="fst-italic"> Uzumaki Naruto & Hyuga Hinata</h2>
           </div>
@@ -174,7 +174,7 @@
             class="d-block w-100"
             alt="pernikahan02"
           />
-          <div class="carousel-caption d-md-block text-info">
+          <div class="carousel-caption d-md-block text-danger">
             <h5 class="card-title fst-italic">Wedding</h5>
           <h2 class="fst-italic"> Uzumaki Naruto & Hyuga Hinata</h2>
           </div>
@@ -513,23 +513,25 @@
     </div>
     <form onsubmit="sendMessage()">
       <div class="mb-3">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" placeholder="Input Name" class="form-control shadow" required>
+        <label for="name"><i class="fa-solid fa-person me-1"></i>Name</label>
+        <input type="text" id="name" placeholder="Input Name" class="form-control shadow-sm rounded-4" required>
       </div>
       <div class="mb-3">
-        <label for="presence">Presence</label>
-        <select type="presence" id="presence"class="form-control shadow" required>
-          <option value="present">Present</option>
-          <option value="notpresent">Not Present</option>
+        <label for="presence"><i class="fa-solid fa-person-circle-question me-1"></i>Presence</label>
+        <select type="presence" id="presence"class="form-select shadow-sm rounded-4">
+          <option value="Present">Present</option>
+          <option value="Not Present">Not Present</option>
         </select>
       </div>
       <div class="mb-3">
-        <label for="message">Your Message</label>
-        <textarea id="message" cols="30" rows="3" class="form-control shadow" required></textarea>
+        <label for="message"><i class="fa-solid fa-comment me-1" ></i>Messages & Prayers</label>
+        <textarea id="message" cols="30" rows="3" class="form-control shadow-sm rounded-4" placeholder="Write Message and Prayers" autocomplete="off" required></textarea>
       </div>
-      <button class="btn btn-primary px-4" type="submit">
-        Send Message
+      <div class="d-grid">
+      <button class="btn btn-primary btn-sm rounded-4 shadow m-1" type="submit">
+        <i class="fa-slod fa-papper-plane me-1">Send Message</i>
       </button>
+    </div>
     </form>
     <!--<div class="mb-3">
                         <label for="form-presence" class="form-label"><i class="fa-solid fa-person-circle-question me-1"></i>Presensi</label>
